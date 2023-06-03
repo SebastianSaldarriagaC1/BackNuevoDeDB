@@ -1,0 +1,65 @@
+{
+  "applications": "*",
+  "changelogDate": "20230529234127",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "estudiante",
+  "fields": [
+    {
+      "fieldName": "nombre",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "apellido",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fechaNacimiento",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "correo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "direccion",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "estado",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "documento",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "genero",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "numeroContacto",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Estudiante",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "ingresoEstudiante",
+      "otherEntityRelationshipName": "estudiante",
+      "relationshipName": "ingresoEstudiante",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "solicitudReingreso",
+      "otherEntityRelationshipName": "estudiante",
+      "relationshipName": "solicitudReingreso",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

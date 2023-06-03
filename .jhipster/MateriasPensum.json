@@ -1,0 +1,28 @@
+{
+  "applications": "*",
+  "changelogDate": "20230529234133",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "materias_pensum",
+  "fields": [],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "MateriasPensum",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "materia",
+      "otherEntityRelationshipName": "materiasPensum",
+      "relationshipName": "materia",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "pensum",
+      "otherEntityRelationshipName": "materiasPensum",
+      "relationshipName": "pensum",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

@@ -1,0 +1,31 @@
+{
+  "applications": "*",
+  "changelogDate": "20230529234136",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "documento_ingreso_estudiante",
+  "fields": [
+    {
+      "fieldName": "nombreDocumento",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "descripcionDocumento",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "DocumentoIngresoEstudiante",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "ingresoEstudiante",
+      "otherEntityRelationshipName": "documentoIngresoEstudiante",
+      "relationshipName": "ingresoEstudiante",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

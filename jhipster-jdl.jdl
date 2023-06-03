@@ -1,0 +1,95 @@
+// Entidades
+entity Estudiante {
+   
+    nombre String
+    apellido String
+    fechaNacimiento Instant
+    correo String
+    direccion String
+    estado String
+    documento String
+    genero String
+    numeroContacto String
+}
+
+entity SolicitudReingreso {
+    
+    fechaSolicitud Instant
+    motivo String
+    carreraSolicitada Long
+    
+}
+
+entity DocumentoReingresoEstudiante {
+   
+    nombreDocumento String
+    descripcionDocumento String
+}
+
+entity Carrera {
+   
+    nombreCarrera String
+    modalidad String
+    facultad String
+}
+
+entity Pensum {
+    
+    numeroPensum Long
+}
+
+entity Materia {
+   
+    nombreMateria String
+    creditos Long
+}
+
+entity MateriasPensum {
+    
+   
+    
+}
+
+entity Sede {
+  
+    nombreSede String
+    direccionSede String
+    regional String
+}
+
+entity IngresoEstudiante {
+   
+    fechaIngreso Instant
+    semestreInscripcion String
+    tipoIngreso String
+  
+    
+}
+
+entity DocumentoIngresoEstudiante {
+   
+    nombreDocumento String
+    descripcionDocumento String
+   
+}
+
+// Relaciones
+
+
+relationship ManyToOne {
+	DocumentoReingresoEstudiante to SolicitudReingreso,
+    
+    SolicitudReingreso to Carrera,
+    MateriasPensum to Materia,
+    MateriasPensum to Pensum,
+    IngresoEstudiante to Estudiante, 
+    IngresoEstudiante to Carrera,
+    
+    IngresoEstudiante to Sede,
+    IngresoEstudiante to Pensum,
+    SolicitudReingreso to Estudiante,
+    DocumentoIngresoEstudiante to  IngresoEstudiante
+    
+   
+    
+}

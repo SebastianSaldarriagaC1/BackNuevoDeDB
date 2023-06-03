@@ -1,0 +1,41 @@
+{
+  "applications": "*",
+  "changelogDate": "20230529234130",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "carrera",
+  "fields": [
+    {
+      "fieldName": "nombreCarrera",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "modalidad",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "facultad",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Carrera",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "solicitudReingreso",
+      "otherEntityRelationshipName": "carrera",
+      "relationshipName": "solicitudReingreso",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "ingresoEstudiante",
+      "otherEntityRelationshipName": "carrera",
+      "relationshipName": "ingresoEstudiante",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

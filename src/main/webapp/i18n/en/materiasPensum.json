@@ -1,0 +1,25 @@
+{
+  "ingresosReingresosApp": {
+    "materiasPensum": {
+      "home": {
+        "title": "Materias Pensums",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Materias Pensum",
+        "createOrEditLabel": "Create or edit a Materias Pensum",
+        "notFound": "No Materias Pensums found"
+      },
+      "created": "A new Materias Pensum is created with identifier {{ param }}",
+      "updated": "A Materias Pensum is updated with identifier {{ param }}",
+      "deleted": "A Materias Pensum is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Materias Pensum {{ id }}?"
+      },
+      "detail": {
+        "title": "Materias Pensum"
+      },
+      "id": "ID",
+      "materia": "Materia",
+      "pensum": "Pensum"
+    }
+  }
+}

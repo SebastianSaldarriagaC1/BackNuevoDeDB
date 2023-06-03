@@ -1,0 +1,34 @@
+{
+  "ingresosReingresosApp": {
+    "estudiante": {
+      "home": {
+        "title": "Estudiantes",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Estudiante",
+        "createOrEditLabel": "Crear o editar Estudiante",
+        "notFound": "Ningún Estudiantes encontrado"
+      },
+      "created": "Un nuevo Estudiante ha sido creado con el identificador {{ param }}",
+      "updated": "Un Estudiante ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Estudiante ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Estudiante {{ id }}?"
+      },
+      "detail": {
+        "title": "Estudiante"
+      },
+      "id": "ID",
+      "nombre": "Nombre",
+      "apellido": "Apellido",
+      "fechaNacimiento": "Fecha Nacimiento",
+      "correo": "Correo",
+      "direccion": "Direccion",
+      "estado": "Estado",
+      "documento": "Documento",
+      "genero": "Genero",
+      "numeroContacto": "Numero Contacto",
+      "ingresoEstudiante": "Ingreso Estudiante",
+      "solicitudReingreso": "Solicitud Reingreso"
+    }
+  }
+}

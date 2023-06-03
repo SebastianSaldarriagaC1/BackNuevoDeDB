@@ -1,0 +1,59 @@
+{
+  "applications": "*",
+  "changelogDate": "20230529234135",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "ingreso_estudiante",
+  "fields": [
+    {
+      "fieldName": "fechaIngreso",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "semestreInscripcion",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tipoIngreso",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "IngresoEstudiante",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "estudiante",
+      "otherEntityRelationshipName": "ingresoEstudiante",
+      "relationshipName": "estudiante",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "carrera",
+      "otherEntityRelationshipName": "ingresoEstudiante",
+      "relationshipName": "carrera",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "sede",
+      "otherEntityRelationshipName": "ingresoEstudiante",
+      "relationshipName": "sede",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "pensum",
+      "otherEntityRelationshipName": "ingresoEstudiante",
+      "relationshipName": "pensum",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "documentoIngresoEstudiante",
+      "otherEntityRelationshipName": "ingresoEstudiante",
+      "relationshipName": "documentoIngresoEstudiante",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}
